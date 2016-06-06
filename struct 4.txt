@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+typedef struct
+{
+    char fn[20];
+    char ln[20];
+    int  ec;
+}emp;
+
+void main(void)
+{
+    emp elist[3]={
+                  {"Arindam","Sarkar",1},
+                  {"Ram","Kumar",2},
+                  {"Sam","Last",3}
+                 };
+    int i=0;
+
+    for(i=0;i<3;i++)
+    {
+        printf("first name = %s \n",elist[i].fn);
+        printf("last  name = %s \n",elist[i].ln);
+        printf("Emp   Code = %d \n",elist[i].ec);
+        printf("\n\n");
+    }
+}

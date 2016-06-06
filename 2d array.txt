@@ -1,0 +1,20 @@
+#include<stdio.h>
+
+int num[2][3] = {
+                {44,55,66},
+                {77,88,99}
+              };
+
+
+void main(void)
+{
+    int i,j;
+    for(i=0;i<2;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            printf("num[%d][%d] = %d \t",i,j,num[i][j]);
+        }
+        printf("\n");
+    }
+}

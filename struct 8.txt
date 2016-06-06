@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+typedef struct
+{
+    char fn[20];
+    char ln[20];
+    int  ec;
+}emp;
+
+void print_emp(emp *es);
+
+void main(void)
+{
+    emp elist[3]={
+                    {"Arindam","Sarkar",1},   // <--- Pointer is pointing here
+                    {"Ram","Kumar",2},
+                    {"Sam1","Last",3}
+                 };
+
+
+    print_emp(&elist[0]);
+}
+
+void print_emp(emp *es)
+{
+    int i=0;
+    for(i=0;i<3;i++)
+    {
+        printf("first name = %s \n",es->fn);
+        printf("last  name = %s \n",es->ln);
+        printf("Emp   Code = %d \n",es->ec);
+        printf("\n");
+        es++;
+    }
+}

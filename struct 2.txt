@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+struct employee
+{
+    char fn[20];
+    char ln[20];
+    int  ec;
+};
+
+void main(void)
+{
+    struct employee emp1={"Arindam","Sarkar",1};
+    struct employee emp2={"Ram","Kumar",2};
+
+    printf("first name = %s \n",emp1.fn);
+    printf("last  name = %s \n",emp1.ln);
+    printf("Emp   Code = %d \n",emp1.ec);
+    printf("\n\n");
+    printf("first name = %s \n",emp2.fn);
+    printf("last  name = %s \n",emp2.ln);
+    printf("Emp   Code = %d \n",emp2.ec);
+
+}

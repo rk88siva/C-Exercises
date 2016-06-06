@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+typedef struct
+{
+    char fn[20];
+    char ln[20];
+    int  ec;
+}emp;
+
+
+void main(void)
+{
+    emp elist={"Arindam","Sarkar",1};
+    emp *ps=NULL;
+
+    ps = &elist;
+
+    printf("first name = %s \n",ps->fn);
+    printf("last  name = %s \n",ps->ln);
+    printf("Emp   Code = %d \n",ps->ec);
+    printf("\n\n");
+
+}
+
+
